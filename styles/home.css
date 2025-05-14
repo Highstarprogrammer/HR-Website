@@ -1,63 +1,89 @@
+body {
+    margin: 0px;
+    background-color: rgb(249, 247, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: scroll;
+}
+
+
 .hero-section {
     background-color:rgb(12, 12, 12);
-    border: 5px;
-    height: 500px;
+    height: 700px;
     width: auto;
-    
 }
 .hero-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: 0.1;
+    opacity: 0.2;
     
 }
-.heading-text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.heading-text-home {
     color: rgb(251, 126, 1);
-    font-size: 25px;
+    font-size: 45px;
     position: absolute;
-    top: 150px;
-    left: 170px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 3px;
+    width: 450px;
+        text-align: center;
+        margin: 0;
+        top: 300px;
+        left: 360px;
+        font-size: 40px;
+        line-height: 45px;
+        font-family: 'Merriweather', sans-serif;
 }
 
+
+
 .heading2-text {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(252, 252, 251);
-    font-size: 15x;
+    font-size: 35x;
     position: absolute;
-    top: 200px;
-    left: 250px;
-    text-transform: capitalize;
-    font-weight: bold;
+    top: 490px;
+    width: 400px;
     text-align: center;
-    letter-spacing: 3px;
-    width: 840px;
-    line-height: 25px;
+    left: 380px;
 }
-.nav-bar {
-    
+.hero-CTA {
+    position: absolute;
+    top: 650px;
+    left: 450px;
+    border: none;
+    /*border-radius: 5px;*/
+    text-align: center;
+    width: 350px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    /*margin-top: 100px;*/
+    padding: 10px 5px 10px 5px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(251, 126, 1);
     color: white;
-    position:fixed;
-    top: 2px;
-    left: 50px;
-    right: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: auto;
-    margin-top: 50px;
-    
+    cursor: pointer;
+}
+
+.hero-CTA:hover {
+    background-color: white;
+    color: black;
+
+}
+.nav-button {
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+
 }
 .nav-left{
     font-family: Arial, Helvetica, sans-serif;
 }
-.nav-right {
-   
-    margin-left: 100px;
+.nav-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     display: flex;
     justify-content: space-around;
     text-transform: capitalize;
@@ -67,3 +93,549 @@
     cursor: pointer;
     /*make them to bubble*/
 }
+.nav-links {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 35px;
+    padding-right: 40px;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+@media  (max-width: 768px) {
+    .heading2-text {
+        overflow-wrap: break-word;
+        top: 450px;
+        left: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 25px;
+        width: 400px;
+        text-align: start;
+    }
+    .heading-text-home {
+        font-size: 35px;
+        text-align: start;
+        position: absolute;
+        top: 270px;
+        left: 20px;
+        width: 400px;
+       margin-left: 25px;
+       margin-right: 20px;
+        text-transform: capitalize;
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 48px;
+        overflow-wrap: break-word;
+    }
+
+    .hero-CTA {
+        left: 45px;
+        width: 150px;
+    }
+
+    .service-summary {
+        display: grid;
+        grid-template-columns: 1fr;
+        z-index: 2;
+    }
+}
+
+.service-section {
+    margin-top: 30px;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+    /*border-top: 3px solid rgb(21, 20, 20);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
+}
+
+.Service-label {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    font-size: 29px;
+    font-weight: bold;
+    background-color: rgb(1, 20, 47);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    color: white;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 50px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.span1 {
+    padding-top: 40px;
+}
+.service-summary
+ {
+    position: relative;
+    background-color: white;
+    height: 700px;
+    /*position: absolute;*/
+}
+.recruitment {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    background-color: rgb(251, 126, 1);
+    height: 600px;
+    width: 400px;
+    display: grid;
+    margin-top: 45px;
+    border-radius: 9px;
+    grid-template-columns: 1fr;
+    
+}
+
+.recruitment-img-container {
+    width: 100%;
+    height: 160px;
+    border-radius: 29px;
+}
+
+.recruitment-img {
+    width: 100%;
+}
+
+.hiring-content {
+    margin-top: 50px;
+}
+
+.content-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: yellow;
+    letter-spacing: 2px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.content-label1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    
+}
+.main-content {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(6, 6, 6);
+    line-height: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.CTA1 {
+    margin-left: 15px;
+    padding: 10px 25px 10px 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    background-color: rgb(6, 6, 6);
+    color: white;
+    cursor: pointer;
+    
+}
+
+.CTA1:hover {
+    transform: translate(10px, -10px);
+}
+
+.Trainings {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    background-color: rgb(251, 126, 1);
+    height: 600px;
+    width: 400px;
+    display: grid;
+    margin-top: 45px;
+    border-radius: 9px;
+    grid-template-columns: 1fr;
+}
+
+@media  (max-width: 768px) {
+    
+    .service-summary {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: auto;
+        height: 1300px;
+        position: relative;
+    }
+    .Trainings  {
+        position: static;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .recruitment  {
+        position: static;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .hiring-content {
+        margin-top: 140px;
+    }
+    .why-choose-us {
+        /*width: 0 auto;*/
+        position: relative;
+        margin-top: 200px;
+    }
+    .choose-us-container {
+        position: static;
+        display: block; 
+    }
+    .choose-us-label {
+        
+    }
+    .choose-us-content {
+      position: static;
+        grid-template-columns: 1fr;
+        background-color: rgb(10, 9, 9);
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+        font-size: 12px;
+    }
+    /* {
+        outline: 1px solid red;
+    }*/
+    .CTA-heading {
+        width: 350px;
+        overflow-wrap: break-word;
+    }
+    .right {
+       
+        width: 350px;
+        overflow-wrap: break-word;
+    }
+    
+    
+
+}
+
+.why-choose-us {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    margin-top: 150px;
+}
+
+.why-img {
+    height: 100%;
+    width: 100%;
+}
+
+.choose-us-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.choose-us-label {
+    position: absolute;
+    top: 330px;
+    left: 19px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 2px;
+    background-color: rgb(251, 126, 1);
+    margin-left: 140px;
+    padding: 15px 100px 15px 100px;
+}
+
+.choose-us-content {
+    position: absolute;
+    grid-template-columns: 1fr;
+    top: 100px;
+    right: 80px;
+    gap: 30px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.content {
+    width: 523px;
+    padding-bottom: 7px;
+    border-bottom: 1px dotted black;
+    line-height: 23px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.content-label {
+    font-size: 19px;
+    margin-bottom: 15px;
+    color: black;
+    padding-top: 20px;
+}
+
+.review-section {
+    height: 400px;
+    background-color: rgb(1, 70, 84);
+    margin-top: 160px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    opacity: 1;
+    margin-bottom: 150px;
+}
+
+.review-label {
+    margin-left: 400px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    
+}
+
+.review-content {
+   background-color: rgb(251, 126, 1);
+   margin-left: 30px;
+   margin-top: 20px;
+   width: 230px;
+   height: 190px;
+   border-radius: 15px;
+   color: white;
+   opacity: 1;
+  /* border-bottom-right-radius: 7px;
+   border-bottom-left-radius: 7px;*/
+}
+
+.the-content {
+    display: inline-block;
+    margin: 25px 10px 15px 10px;
+    font-size: 13px;
+    line-height: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+.name-position {
+    background-color: black;
+}
+
+.name-reviewer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.position-reviewer {
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+.review-content-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.main-CTA {
+    position: relative; /* Ensures it's the parent container */
+    display: flex; /* Center content */
+    justify-content: center; /* Horizontally center content */
+   
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Prevent content from touching screen edges */
+    background-color: #000; /* Example background for visibility */
+}
+
+.main-CTA-img {
+    position: absolute; /* Background image stays behind the text */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    opacity: 0.3; /* Add transparency to the image */
+    z-index: 1; /* Ensure the image stays behind the text */
+}
+
+.CTA-heading {
+    position: absolute;
+    left: 40px; /* Keep the text within the flow of the document */
+    width: calc(100% - 40px); /* Responsive width */
+    max-width: 600px; /* Limit width on larger screens */
+    margin-left: 20px; /* Add margin to the left */
+    line-height: 1.5; /* Good readability */
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: left; /* Align text to the left */
+    z-index: 2; /* Ensure text appears above the background image */
+}
+.right {
+    color: rgb(251, 126, 1);
+}
+
+.CTA-text {
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    width: 400px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.CTA-btn {
+    position: absolute;
+    top: 250px;
+    right: 200px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(251, 126, 1);
+    padding: 15px 30px 15px 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.CTA-btn:hover {
+    transform: 0.8s ease;
+    background-color: black;
+}
+ @media (max-width: 768px) {
+    .why-choose-us {
+        position: relative;
+        height: 1100px;
+        width: calc(100% - 5px);
+        align-items: center;
+    }
+    .why-img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+    }
+    .choose-us-container {
+        position: relative;
+        display: block;
+        z-index: 2;
+        width: calc(100% - 40px);
+        align-items: center;
+        padding-top: 10px;
+    }
+    .choose-us-content {
+        position: static;
+        width: calc(100% - 20px);
+        padding-top: 10px;
+        
+    }
+    .choose-us-label {
+        position: static;
+        height: 10px;
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 60px;
+        padding: 5px -90px 5px -90px;
+        background-color: rgb(1, 20, 47);
+       
+        
+    }
+    .content {
+        display: block;
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border-bottom: 2px solid gray;
+
+    }
+    .review-section {
+        margin-top: 80px;
+        align-items: center;
+        position: relative;
+    }
+    .content-label {
+        font-size: 20px;
+        margin-right: 15px;
+        padding-top: 5px;
+    }
+    .cotent-main {
+        font-size: 18px;
+        line-height: 25px;
+        margin-left: 15px;
+        margin-right: 10px;
+        margin-top: 10px;
+        color: rgb(70, 46, 1);
+    }
+    
+    .review-label {
+        margin-left: 100px;
+        font-size: 15px;
+    }
+    .review-content-box {
+        display: block;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .review-content {
+        position: absolute;
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+    }
+    .review-content.active {
+        opacity: 1;
+    }
+    .review-content.prev {
+        left: -100%;
+        opacity: 0;
+    }
+    .main-CTA {
+        margin-top: 25px;
+        align-items: center;
+    }
+    .CTA-heading {
+        margin-top: -150px;
+    }
+    .CTA-text {
+        align-items: center;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .CTA-btn {
+        margin-top: 150px;
+        align-items: center;
+        
+    }
+    .review-content-box {
+        position: relative;
+    }
+    .review-content {
+        position: absolute;
+        top: 2px;
+        left: 80px;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .review-content.active {
+        opacity: 1;
+    }
+ }

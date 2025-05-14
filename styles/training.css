@@ -1,0 +1,30 @@
+.trainings-quote2 {
+    margin-top: 70px;
+}
+.treaning-benefit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  max-width: 100%;
+}
+.treaning-benefit .Screening {
+    width: 25%;
+    border-bottom: 2px solid gray;
+        border-left: 2px solid gray;
+        padding-left: 35px;
+        padding-bottom: 35px;
+        border-bottom-left-radius: none;
+        border-block-end-color: orange;
+        border-block-end-width: 8px;
+        border-block-end-style: double;
+}
+.training-heardcontent {
+    font-size: 20px;
+}
+
+.training-tailcontent {
+    font-size: 18px;
+}
+.training-differentiation {
+    height: 700px;
+}
