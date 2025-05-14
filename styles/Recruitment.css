@@ -137,7 +137,7 @@ body {
   }
   
   /* Desktop View */
-  @media (min-width: 768px) {
+  @media (min-width: 480px) {
     .nav-section {
         display: flex;
         justify-content: space-between;
@@ -247,7 +247,7 @@ body {
     background-color: white;
     color: black;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
     .service-hero {
         height: 700px;
     }
@@ -368,7 +368,7 @@ body {
     left: 25px;
     margin: 0px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
     .service-content2 {
         height: 1200px;
         margin-bottom: 150px;
@@ -469,7 +469,7 @@ body {
 .box-black {
     background-color: rgb(1, 20, 47);
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
     .do-it-label {
         margin-bottom: 100px;
         width: 400px;
@@ -638,7 +638,7 @@ body {
     background-color: white;
     color: black;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
     .Benefit-section {
         margin-top: 180px;
     }
@@ -713,7 +713,7 @@ body {
     color: white;
 }
 
-@media (min-width: 768px)  {
+@media (min-width: 480px)  {
     .Differentiation-section {
         margin-top: 150px;
         display: grid;
