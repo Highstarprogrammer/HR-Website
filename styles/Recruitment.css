@@ -137,7 +137,7 @@ body {
   }
   
   /* Desktop View */
-  @media (min-width: 560px) {
+  @media (min-width: 768px) {
     .nav-section {
         display: flex;
         justify-content: space-between;
