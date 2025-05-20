@@ -97,6 +97,7 @@ body {
     text-decoration: none;
     display: flex;
     gap: 35px;
+    display: block;
     padding-right: 40px;
     list-style: none;
     color: white;
